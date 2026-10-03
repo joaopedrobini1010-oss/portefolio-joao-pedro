@@ -1,0 +1,88 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C2C2C2;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal {
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.principal h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    max-width: 1200px;
+    margin-top: 60px;
+    gap: 50px;
+}
+
+.pessoal {
+    flex: 1;
+}
+
+.pessoal h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.pessoal p {
+    font-size: 20px;
+    opacity: 0.7;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.coluna-cursos {
+    flex: 1;
+    background-color: #0b111e;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.coluna-cursos h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.lista-de-cursos {
+    list-style-position: inside;
+}
+
+.lista-de-cursos li {
+    font-size: 1.1rem;
+    color: var(--cinza-secundario);
+    padding: 10px 0;
+    border-bottom: 1px solid #161f30;
+}
+
+.lista-de-cursos li:last-child {
+    border-bottom: none;
+}
